@@ -15,7 +15,7 @@ for (i = 0; i<101; i++) {
 }
 */
 //Prime Time
-let n = 0;
+let n = 93784092674538;
 n++
 if (n == 2 || n == 3 || n == 5 || n == 7) {
     console.log(n)
