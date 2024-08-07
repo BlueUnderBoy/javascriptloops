@@ -1,4 +1,4 @@
-//FizzBuzz
+/*//FizzBuzz
 for (i = 0; i<101; i++) {
     if (i%5 == 0 && i%3 == 0) {
         console.log("Fizzbuzz")
@@ -13,5 +13,15 @@ for (i = 0; i<101; i++) {
         console.log(i)
     }
 }
-
+*/
 //Prime Time
+if (n>1) {
+    while (n%2 == 0 || n%3 ==0 || n%5 == 0 || n%7 == 0) {
+        n++
+    }
+    console.log(n)
+}
+else {
+    console.log("Number must be greater than 1")
+}
+
