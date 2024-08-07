@@ -13,7 +13,6 @@ for (i = 0; i<101; i++) {
         console.log(i)
     }
 }
-*/
 //Prime Time
 let n = 93784092674538;
 n++
@@ -26,7 +25,7 @@ else if (n>1) {
             return console.log(n)
         }
         else {
-        n++
+            n++
         }
     }
     console.log(n)
@@ -34,4 +33,5 @@ else if (n>1) {
 else {
     console.log("Number must be greater than 1")
 }
-
+*/
+//Feeling Loopy
