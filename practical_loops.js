@@ -94,8 +94,6 @@ let cell3 = "";
 let cell4 = "";
 let ss = string.split(",")
 let ns = ss.length
-console.log(ss)
-console.log(ss[15])
 for (i=0;i<ns+1;i++) {
     if (i == 0 || i == 1 || i == 2 || i == 3 ) {
         cell1 += ss[i] + " "
