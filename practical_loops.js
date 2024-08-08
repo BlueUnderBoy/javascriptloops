@@ -33,7 +33,7 @@ else if (n>1) {
 else {
     console.log("Number must be greater than 1")
 }
-*/
+
 //Feeling Loopy
 string = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
 n = string.length;
@@ -44,44 +44,46 @@ let cell2 = "";
 let cell3 = "";
 let cell4 = "";
 for (i=0;i<n;i++) {
-    if (string[i] == "\n") {
-        console.log("escaped")
-    }
-    else{
-        if (string[i] == ",") {
-            if (v == 1) {
-                v++
-                cell1 += cc
-                cc = ""
-            }
-            else if (v == 2) {
-                v++
-                cell2 += cc
-                cc = ""
-            }
-            else if (v == 3) {
-                v++
-                cell3 += cc
-                cc = ""
-            }
-            else {
-                cell4 += cc
-                cc = ""
-                v = 0
-                //console.log(cell1, cell2, cell3, cell4)
-            }
+    if (string[i] == ",") {
+        if (v == 1) {
+            v++
+            cell1 += cc
+            cc = ""
+        }
+        else if (v == 2) {
+            v++
+            cell2 += cc
+            cc = ""
+        }
+        else if (v == 3) {
+            v++
+            cell3 += cc
+            cc = ""
         }
         else {
-            if (string[i+1] == undefined) {
-                cc += string[i]
-                cell4 += cc
-                cc = ""
-                v = 0
-                console.log(cell1, cell2, cell3, cell4 + "\n")
-            }
-            else {
-                cc += string[i]
-            }
+            cell4 += cc
+            cc = ""
+            v = 0
+            console.log(cell1, cell2, cell3, cell4)
+            cell1 = ""
+            cell2 = ""
+            cell3 = ""
+            cell4 = ""
+        }
+    }
+    else {
+        if (string[i+1] == undefined) {
+            cc += string[i]
+            cell4 += cc
+            cc = ""
+            v = 0
+            console.log(cell1, cell2, cell3, cell4)
+        }
+        else {
+            cc += string[i]
         }
     }  
 }
+*/
+string = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
+n = string.length;
