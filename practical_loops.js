@@ -95,8 +95,24 @@ let cell4 = "";
 let ss = string.split(",")
 let ns = ss.length
 console.log(ss)
-for (i=0;i<ns;i++) {
+console.log(ss[15])
+for (i=0;i<ns+1;i++) {
     if (i == 0 || i == 1 || i == 2 || i == 3 ) {
-        cell1 += ns[i] + " "
+        cell1 += ss[i] + " "
+    }
+    else if (i == 4 || i == 5 || i == 6 || i == 7 ) {
+        cell2 += ss[i] + " "
+    }
+    else if (i == 8 || i == 9 || i == 10 || i == 11 ) {
+        cell3 += ss[i] + " "
+    }
+    else if (i == 12 || i == 13 || i == 14 || i == 15 ) {
+        cell4 += ss[i] + " "
+    }
+    else if (i == 16 || i == 17 || i == 18 || i == 19 ) {
+        cell4 += ss[i] + " "
+    }
+    else {
+        console.log(cell1, cell2, cell3, cell4)
     }
 }
