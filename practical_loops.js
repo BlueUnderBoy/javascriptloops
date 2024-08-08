@@ -85,8 +85,18 @@ for (i=0;i<n;i++) {
     }  
 }
 */
-let string = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
-n = string.length;
-string.replace("\n", ",")
-console.log(string.replace(/\n/g, ","))
-
+var string = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
+let n = string.length;
+var string = string.replace(/\n/g, ",")
+let cell1 = "";
+let cell2 = "";
+let cell3 = "";
+let cell4 = "";
+let ss = string.split(",")
+let ns = ss.length
+console.log(ss)
+for (i=0;i<ns;i++) {
+    if (i == 0 || i == 1 || i == 2 || i == 3 ) {
+        cell1 += ns[i] + " "
+    }
+}
