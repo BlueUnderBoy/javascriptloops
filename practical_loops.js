@@ -38,18 +38,50 @@ else {
 string = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
 n = string.length;
 let cc = "";
-v = 0;
+v = 1;
 let cell1 = "";
 let cell2 = "";
 let cell3 = "";
 let cell4 = "";
 for (i=0;i<n;i++) {
-    if (string[1] == ",") {
-        v++
-        if (v == 1) [
-
-        ]
+    if (string[i] == "\n") {
+        console.log("escaped")
     }
-    cc += string[i]   
+    else{
+        if (string[i] == ",") {
+            if (v == 1) {
+                v++
+                cell1 += cc
+                cc = ""
+            }
+            else if (v == 2) {
+                v++
+                cell2 += cc
+                cc = ""
+            }
+            else if (v == 3) {
+                v++
+                cell3 += cc
+                cc = ""
+            }
+            else {
+                cell4 += cc
+                cc = ""
+                v = 0
+                //console.log(cell1, cell2, cell3, cell4)
+            }
+        }
+        else {
+            if (string[i+1] == undefined) {
+                cc += string[i]
+                cell4 += cc
+                cc = ""
+                v = 0
+                console.log(cell1, cell2, cell3, cell4 + "\n")
+            }
+            else {
+                cc += string[i]
+            }
+        }
+    }  
 }
-console.log(cc)
