@@ -110,7 +110,17 @@ for (i=0;i<ns+1;i++) {
     else if (i == 16 || i == 17 || i == 18 || i == 19 ) {
         cell4 += ss[i] + " "
     }
-    else {
-        console.log(cell1, cell2, cell3, cell4)
+    else if (i == 20 || i == 21 || i == 22 || i == 23) {
+        console.log("")
     }
+    else {
+        console.log(cell1);
+        console.log(cell2);
+        console.log(cell3);
+        console.log(cell4);
+    } 
 }
+console.log(cell1);
+console.log(cell2);
+console.log(cell3);
+console.log(cell4);
