@@ -35,10 +35,10 @@ else {
 }
 
 //Feeling Loopy
-string = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
-n = string.length;
+let string = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
+let n = string.length;
 let cc = "";
-v = 1;
+let v = 1;
 let cell1 = "";
 let cell2 = "";
 let cell3 = "";
@@ -85,5 +85,8 @@ for (i=0;i<n;i++) {
     }  
 }
 */
-string = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
+let string = "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26"
 n = string.length;
+string.replace("\n", ",")
+console.log(string.replace(/\n/g, ","))
+
